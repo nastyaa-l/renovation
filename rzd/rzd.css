@@ -17,13 +17,13 @@
 }
 
 .header_active {
-  width: 450px;
+  width: 400px;
   height: 400px;
   padding-top: 10px;
 }
 
 .header_noactive {
-  width: 450px;
+  width: 400px;
   height: 90px;
   display: flex;
   align-items: center;
@@ -133,7 +133,7 @@
 
 .header__name {
   font-weight: normal;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 130%;
   margin: auto;
   letter-spacing: -0.01em;
@@ -145,7 +145,7 @@
 }
 
 .header__name_active {
-  font-size: 65px;
+  font-size: 45px;
 }
 
 .header__list_first-column {
