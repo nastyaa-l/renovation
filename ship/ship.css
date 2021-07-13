@@ -1,0 +1,477 @@
+@import url(./Roboto/stylesheet.css);
+
+.page {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  padding: 20px;
+}
+
+.header {
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-areas:
+  "ship build net rzd"
+  "ship spisok_1 second third";
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header_active {
+  width: 450px;
+  height: 400px;
+  padding-top: 10px;
+}
+
+.header_noactive {
+  width: 450px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+.header__rzd{
+  background-color: #F3E038;
+  grid-area: rzd;
+  position: relative;
+}
+
+.header__rzd:hover::after {
+  content: "";
+  background-image: url(../image/rzd.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+  top: 0;
+  left:0;
+  bottom:0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.header__rzd:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.header__ship {
+  background-color: black;
+  grid-area: ship;
+  position: relative;
+  opacity: 0.4;
+}
+
+.header__ship::after {
+    content: "";
+    background-image: url(../image/ship.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    top: 0;
+    left:0;
+    bottom:0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.header__net:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.header__net:hover::after {
+    content: "";
+    background-image: url(../image/build.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    top: 0;
+    left:0;
+    bottom:0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+.header__build:hover::after {
+    content: "";
+    background-image: url(../image/build.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    top: 0;
+    left:0;
+    bottom:0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.header__build:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.header__build {
+  background-color: #F3E038;
+  grid-area: build;
+  position: relative;
+}
+
+.header__net {
+  background-color: black;
+  grid-area: net;
+  position: relative;
+}
+
+.header__name {
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 130%;
+  margin: auto;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #FFFFFF;
+  align-self: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header__name_active {
+  font-size: 65px;
+}
+
+.header__list_first-column {
+  grid-area: spisok_1;
+}
+
+.header__list_second-column {
+  grid-area: second;
+}
+
+.header__list {
+  list-style: none;
+  padding: 0;
+}
+
+.header__list-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin: 15px 10px;
+  align-items: flex-end;
+}
+
+.header__list-name {
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 158%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header__price {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  color: #000000;
+  margin: 0;
+}
+
+.header__list_third-column {
+  grid-area: third;
+}
+
+
+.content__hard::after {
+  background-image: url(../image/shipbac1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top:10px;
+  left: -300px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.07;
+}
+
+.content__header {
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 105%;
+  letter-spacing: 0.03em;
+  margin: 0 0 0 30px;
+  color: #000000;
+  grid-area: text;
+}
+
+.content {
+  margin-top: 120px;
+  overflow: hidden;
+}
+
+.content__text {
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 140%;
+  color: #000000;
+  grid-area: description;
+  max-width: 600px;
+  margin: 0;
+}
+
+.content__first {
+  display: grid;
+  grid-template-areas:
+  "text image"
+  "description image";
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.content__image {
+   width: 800px;
+   height: 500px;
+   color: gray;
+   grid-area: image;
+   margin-left: 60px;
+}
+
+.content__logo-place {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.content__logo {
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__second {
+  display: grid;
+  grid-template-areas:
+  "image text"
+  "image description";
+  justify-content: flex-start;
+  margin-top: 100px;
+  align-items: flex-start;
+}
+
+.content__image_second {
+  margin: 0 60px 0 0;
+}
+
+
+
+.title {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 132%;
+  color: #000000;
+  margin: 150px 0 0;
+  text-align: center;
+  border-bottom: 1px black solid;
+}
+
+.title_active {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 132%;
+  color: #000000;
+  margin: 150px 0 0;
+  text-align: center;
+  color: #F3E038;
+}
+
+.quiz__content {
+  width: 400px;
+  height: 400px;
+  border: 1px green solid;
+  margin: 30px auto;
+}
+
+.content__hard-place {
+  position: relative;
+  overflow: hidden;
+}
+
+.content__third{
+  margin-top: 100px;
+  display: grid;
+  grid-template-areas:
+  "text description"
+  "image image";
+  margin-bottom: 100px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.content__third::after {
+  background-image: url(../image/shipbac2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top:10px;
+  left: 0;
+  right: -1000px;
+  bottom: 0;
+  opacity: 0.07;
+
+}
+
+.content__condition {
+  position: relative;
+  overflow: hiddenS;
+}
+
+.content__image_third {
+  width: 100%;
+  height: 500px;
+  margin-top: 80px;
+  margin-left: 0;
+}
+
+.content__header_third  {
+  margin-right: 30px;
+}
+
+.footer {
+  margin: 100px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin: 0;
+  text-decoration: none;
+}
+
+.footer__text:active {
+  color: black;
+}
+
+.footer__text:visited {
+  color: #000000;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__list-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer__list-item:visited {
+  color: black;
+}
+
+.footer__list-item:first-child {
+  margin-top: 10px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__inst {
+  width: 25px;
+  height: 25px;
+  background-image: url(../image/inst.svg);
+  outline: none;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer_first {
+  margin-top: 10px;
+}
+
+.footer__twit {
+  width: 25px;
+  height: 25px;
+  background-image: url(../image/twit.svg);
+  outline: none;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__fac {
+  width: 25px;
+  height: 25px;
+  background-image: url(../image/fac.svg);
+  outline: none;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__icon {
+  margin-right: 20px;
+}
+
+.footer__icon-img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.footer__icon:last-child {
+  margin-right: 0;
+}
+
+.footer__list-item:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.footer__contact:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.footer__name:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}

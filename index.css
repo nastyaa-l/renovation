@@ -1,0 +1,240 @@
+@import url(./Roboto/stylesheet.css);
+
+body {
+  width: 100%;
+  background-color:black;
+}
+
+.page {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  padding: 30px 50px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.page::before {
+  content : "";
+  background: url(./image/page.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left:0;
+  bottom:0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #FFFFFF solid;
+  padding-bottom: 30px;
+}
+
+.header__link {
+  width: 180px;
+  height: 50px;
+  background-color: #F3E038;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.header__link-name {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  color: #000000;
+  align-self: center;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.rectangle-first-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.rectangle-second-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.rectangle_black {
+  width:245px;
+  height: 350px;
+  background-color: black;
+}
+
+.rectangle_yellow {
+  height:245px;
+  width: 350px;
+  background-color: #F3E038;
+}
+
+.content__header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 89%;
+  color: #F3E038;
+  text-align: center;
+  margin: 30 0 0 ;
+}
+
+.rectangle__name {
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: center;
+}
+
+.rectangle__link {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 135%;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0;
+  text-align: center;
+}
+
+.rectangle__link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.rectangle__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rectangle__content:hover {
+  cursor:pointer;
+  opacity: 0.7;
+}
+
+.rectangle {
+  margin: 110px auto 0;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.rectangle__RZD {
+  border-radius: 20px 20px 0 20px;
+  position: relative;
+}
+
+.rectangle__ship {
+  border-radius: 0 20px 20px 20px;
+  position: relative;
+}
+
+.rectangle__build {
+  border-radius: 20px 20px 20px 0;
+  position: relative;
+}
+
+.rectangle__net {
+  border-radius: 20px 0 20px 20px;
+  position: relative;
+}
+
+.rectangle__RZD:hover {
+ position: relative;
+}
+
+.rectangle__RZD:hover::after {
+  content: "";
+  background-image: url(./image/rzd.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left:0;
+  bottom:0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 20px 20px 0 20px;
+}
+
+.rectangle__build:hover::after {
+  content: "";
+  background-image: url(./image/build.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left:0;
+  bottom:0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 20px 20px 20px 0px;
+}
+
+.rectangle__net:hover::after {
+  content: "";
+  background-image: url(./image/net.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left:0;
+  bottom:0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 20px 20px 0 20px;
+}
+
+.rectangle__ship:hover::after {
+  content: "";
+  background-image: url(./image/ship.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left:0;
+  bottom:0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 0 20px 20px 20px;
+}
