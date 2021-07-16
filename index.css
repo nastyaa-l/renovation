@@ -59,7 +59,11 @@ body {
   text-decoration: none;
 }
 
-.header__link-name:hover {
+.header__link-block {
+  text-decoration: none;
+}
+
+.header__link:hover {
   opacity: 0.6;
   cursor: pointer;
 }
@@ -114,20 +118,6 @@ body {
   text-align: center;
 }
 
-.rectangle__link {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 135%;
-  color: #FFFFFF;
-  text-decoration: none;
-  margin: 30px 0 0;
-  text-align: center;
-}
-
-.rectangle__link:hover {
-  opacity: 0.6;
-  cursor: pointer;
-}
 
 .rectangle__content {
   display: flex;
@@ -157,6 +147,60 @@ body {
 .rectangle__RZD {
   border-radius: 20px 20px 0 20px;
   position: relative;
+  display: grid;
+  position: relative;
+}
+
+.rectangle__name-rzd {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  text-align: end;
+}
+
+.rectangle__image-rzd {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.rectangle__name-build {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  text-align: start;
+}
+
+.rectangle__image-build {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.rectangle__name-net {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  text-align: end;
+}
+
+.rectangle__image-net {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.rectangle__name-ship {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  text-align: start;
+}
+
+.rectangle__image-ship {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .rectangle__ship {
@@ -176,6 +220,15 @@ body {
 
 .rectangle__RZD:hover {
  position: relative;
+}
+
+.rectangle__image:hover {
+  opacity: 0.7
+}
+
+.rectangle__link {
+  color: white;
+  text-decoration: none;
 }
 
 .rectangle__RZD:hover::after {
@@ -265,11 +318,6 @@ body {
   .rectangle__name {
     font-size: 20px;
   }
-
-  .rectangle__link {
-    font-size: 16px;
-    margin: 10px 0 0;
-  }
 }
 
 @media  screen and (max-width:780px) {
@@ -291,6 +339,25 @@ body {
 
   .page {
     padding: 10px 15px;
+  }
+
+  .rectangle__name-net {
+    left: 5px;
+    text-align: start;
+  }
+
+  .rectangle__image-net {
+    right: 10px;
+    left: auto;
+  }
+
+  .rectangle__name-ship {
+    right: 5px;
+    text-align: end;
+  }
+
+  .rectangle__image-ship {
+    left: 10px;
   }
 
   .rectangle_black {
