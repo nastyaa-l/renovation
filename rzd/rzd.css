@@ -386,7 +386,7 @@
 .footer__list-item {
   font-weight: normal;
   font-size: 14px;
-  line-height: 170%;
+  line-height: 130%;
   color: #000000;
   text-decoration: none;
 }
@@ -696,6 +696,23 @@
   max-width: 300px;
 }
 
+.page {
+  padding: 20px 0px;
+}
+
+.header {
+  margin-top: 10px;
+}
+
+.header__list-item {
+  width: 280px;
+  max-width: 100%;
+}
+
+.title {
+  margin-top: 90px;
+}
+
 .header_noactive {
   width: calc(100% - 30px);
   height: 40px;
@@ -719,9 +736,7 @@
 }
 
 .header__name_active {
-  right: 17px;
-  bottom:0;
-  top:0;
+  top:5px;
 }
 
 .header__list-item:last-child {
