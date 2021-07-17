@@ -644,7 +644,9 @@
 }
 
 .content__first {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content__logo-place {
@@ -653,6 +655,8 @@
 
 .content__text {
   margin-top: 40px;
+  max-width: 450px;
+  text-align: center;
 }
 
 .content__image {
@@ -661,7 +665,9 @@
 }
 
 .content__second {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content__hard::after {
@@ -670,10 +676,13 @@
 
 .content__third::after {
   left: -300px;
+  right: 0;
 }
 
 .content__third {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__icon {
@@ -755,6 +764,7 @@
 
 .content__text {
   font-size: 14px;
+  max-width: 300px;
 }
 
 .footer{

@@ -369,8 +369,20 @@ max-width: 400px;
 }
 
 .content__header {
-  font-size: 45px;
+  font-size: 36px;
   margin: 60px auto 30px;
+}
+
+.us-about__paragraph {
+  font-size: 18px;
+}
+
+.us-about__title {
+  font-size: 18px;
+}
+
+.contacts__paragraph {
+  font-size: 18px;
 }
 
 .footer__text {
@@ -418,10 +430,6 @@ max-width: 400px;
   .header {
     flex-direction: column;
   }
-
-  .content__header {
-    font-size: 40px;
-}
 
 
 .header__name {
