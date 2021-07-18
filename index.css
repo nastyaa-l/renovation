@@ -9,10 +9,10 @@ body {
 .page {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-style: normal;
-  padding: 30px 50px;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
+  padding: 0 10px 40px 10px;
 }
 
 .page::before {
@@ -31,9 +31,8 @@ body {
 }
 
 .header {
-  width: calc(100% - 200px);
-  position: absolute;
-  top: -60px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .header__up {
@@ -82,15 +81,55 @@ body {
   margin: 0;
 }
 
-.header:hover {
-  top: 0;
-  cursor: pointer;
-}
 
 .header__teeth {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 80px;
   background-color: #F3E038;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.header__shdow {
+  position: absolute;
+  bottom: 0;
+  margin:auto;
+  text-align: center;
+  height: 50px;
+  width: 45px;
+  border: 1px black solid;
+}
+
+.footer__shdow {
+  margin: auto;
+  text-align: center;
+  height: 50px;
+  width: 45px;
+  border: 1px black solid;
+}
+
+.footer__teeth {
+  width: 60px;
+  height: 80px;
+  background-color: #F3E038;
+  border: 1px solid black;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.header__title {
+  position: relative;
+    top: -60px;/*-155 */
+    -moz-transition:1s;
+    -webkit-transition:1s;
+    -o-transition:1s;
+    transition:1s;
+}
+
+.header:hover .header__title {
+  top:0;
+  cursor: pointer;
 }
 
 .rectangle-first-row {
@@ -112,13 +151,13 @@ body {
 }
 
 .rectangle_black {
-  width:245px;
+  width:250px;
   height: 350px;
   background-color: black;
 }
 
 .rectangle_yellow {
-  height:245px;
+  height:250px;
   width: 350px;
   background-color: #F3E038;
 }
@@ -132,6 +171,32 @@ body {
   text-align: center;
   margin: 30 0 0 ;
 }
+
+
+.footer__esc {
+  border-top: none;
+  border-bottom: 1px solid white;
+}
+
+.footer {
+  overflow: hidden;
+}
+
+.footer__title {
+  position: relative;
+    top: 140px;/*-155 */
+    -moz-transition:1s;
+    -webkit-transition:1s;
+    -o-transition:1s;
+    transition:1s;
+    margin-bottom: 20px;
+}
+
+.footer:hover .footer__title {
+  top:0;
+  cursor: pointer;
+}
+
 
 .rectangle__name {
   font-weight: normal;
@@ -159,7 +224,7 @@ body {
 }
 
 .rectangle {
-  margin: 110px auto 0;
+  margin: 60px auto 60px;
   width: 700px;
   height: 700px;
   display: flex;
@@ -256,6 +321,10 @@ body {
   text-decoration: none;
 }
 
+.header__logo {
+  margin-left: 10px;
+}
+
 .rectangle__RZD:hover::after {
   content: "";
   background-image: url(./image/rzd.png);
@@ -320,6 +389,16 @@ body {
   border-radius: 0 20px 20px 20px;
 }
 
+@media  screen and (max-width:1440px) {
+  .footer__title {
+    top: 160px;
+  }
+
+  .page {
+    padding-bottom: 10px;
+  }
+}
+
 @media  screen and (max-width:1100px) {
   .header__link {
     width: 140px;
@@ -346,12 +425,40 @@ body {
 }
 
 @media  screen and (max-width:780px) {
+  .footer__title {
+    top: 0px;
+  }
+
+  .header__title {
+    top: 0px;
+  }
   .content__header {
     font-size: 48px;
   }
   .header {
     padding-bottom: 5px;
   }
+
+  .footer__shdow {
+    height: 30px;
+    width: 30px;
+  }
+
+  .footer__teeth {
+    width: 40px;
+    height: 60px;
+  }
+
+  .header__shdow {
+    height: 30px;
+    width: 30px;
+  }
+
+  .header__teeth {
+    width: 40px;
+    height: 60px;
+  }
+
 }
 
 @media  screen and (max-width:580px) {
@@ -361,6 +468,8 @@ body {
   .header__logo {
     font-size: 20px;
   }
+
+
 
   .page {
     padding: 10px 15px;
@@ -447,6 +556,26 @@ body {
   .rectangle_black {
     width:290px;
     height: 130px;
+  }
+
+  .footer__shdow {
+    height: 25px;
+    width: 18px;
+  }
+
+  .footer__teeth {
+    width: 25px;
+    height: 40px;
+  }
+
+  .header__shdow {
+    height: 25px;
+    width: 18px;
+  }
+
+  .header__teeth {
+    width: 25px;
+    height: 40px;
   }
 
   .rectangle_yellow {
